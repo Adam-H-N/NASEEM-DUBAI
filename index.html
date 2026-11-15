@@ -139,16 +139,24 @@
   <header class="fixed top-0 inset-x-0 z-40 glass-panel transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
       
-      <!-- Brand Wordmark -->
+      <!-- Brand Logo / Wordmark (Drop your logo at ./images/naseem-logo.png in VS Code) -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-8 h-8 rounded-full border border-espresso/20 flex items-center justify-center group-hover:border-gold transition-colors">
-          <span class="w-2.5 h-2.5 rounded-full bg-gold transition-transform group-hover:scale-125" id="nav-brand-dot"></span>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-serif text-xl sm:text-2xl tracking-[0.22em] font-semibold text-espresso leading-none">NASEEM</span>
-          <div class="flex items-center gap-2 mt-0.5">
-            <span class="text-[9px] tracking-[0.35em] uppercase text-taupe">Dubai</span>
-            <span class="text-[11px] font-arabic text-taupe/80">نسيم دبي</span>
+        <img 
+          src="logo.png" 
+          alt="NASEEM DUBAI" 
+          onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          class="h-10 sm:h-11 w-auto object-contain"
+        />
+        <div class="hidden flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full border border-espresso/20 flex items-center justify-center group-hover:border-gold transition-colors">
+            <span class="w-2.5 h-2.5 rounded-full bg-gold transition-transform group-hover:scale-125" id="nav-brand-dot"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-xl sm:text-2xl tracking-[0.22em] font-semibold text-espresso leading-none">NASEEM</span>
+            <div class="flex items-center gap-2 mt-0.5">
+              <span class="text-[9px] tracking-[0.35em] uppercase text-taupe">Dubai</span>
+              <span class="text-[11px] font-arabic text-taupe/80">نسيم دبي</span>
+            </div>
           </div>
         </div>
       </a>
@@ -458,14 +466,14 @@
         <figure onclick="previewLookbookFinish('gold')" class="group cursor-pointer">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="alserkal-avenue.jpg" 
+              src="./images/alserkal-avenue.jpg" 
               alt="18k Champagne Gold Naseem Collar at Alserkal Avenue" 
               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
               <div class="font-serif text-lg text-espresso">Look 01</div>
-              <div class="text-[11px] font-mono text-taupe mt-1">./images/alserkal-avenue.jpg</div>
+              <div class="text-[11px] font-mono text-taupe mt-1">alserkal-avenue.jpg</div>
             </div>
           </div>
           <figcaption class="mt-4 text-[10px] sm:text-[11px] uppercase tracking-[0.26em] text-taupe group-hover:text-espresso transition-colors font-medium">
@@ -477,14 +485,14 @@
         <figure onclick="previewLookbookFinish('silver')" class="group cursor-pointer md:mt-16 lg:mt-20">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="downtown-rooftop.jpg" 
+              src="./images/downtown-rooftop.jpg" 
               alt="925 Sterling Silver Naseem Collar at a Downtown Dubai Rooftop" 
               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
               <div class="font-serif text-lg text-espresso">Look 02</div>
-              <div class="text-[11px] font-mono text-taupe mt-1">./images/downtown-rooftop.jpg</div>
+              <div class="text-[11px] font-mono text-taupe mt-1">downtown-rooftop.jpg</div>
             </div>
           </div>
           <figcaption class="mt-4 text-[10px] sm:text-[11px] uppercase tracking-[0.26em] text-taupe group-hover:text-espresso transition-colors font-medium">
@@ -496,14 +504,14 @@
         <figure onclick="previewLookbookFinish('silver')" class="group cursor-pointer">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="al-fahidi.jpg" 
+              src="./images/al-fahidi.jpg" 
               alt="925 Sterling Silver Naseem Collar in Al Fahidi Historical Neighbourhood" 
               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
               <div class="font-serif text-lg text-espresso">Look 03</div>
-              <div class="text-[11px] font-mono text-taupe mt-1">./images/al-fahidi.jpg</div>
+              <div class="text-[11px] font-mono text-taupe mt-1">al-fahidi.jpg</div>
             </div>
           </div>
           <figcaption class="mt-4 text-[10px] sm:text-[11px] uppercase tracking-[0.26em] text-taupe group-hover:text-espresso transition-colors font-medium">
@@ -539,7 +547,7 @@
             <button type="button" onclick="selectConfigMetal('gold')" id="cfg-metal-gold" class="text-left p-5 rounded-2xl border-2 border-espresso bg-alabaster transition-all shadow-sm">
               <div class="flex items-center justify-between">
                 <span class="w-6 h-6 rounded-full gold-gradient border border-espresso/15"></span>
-                <span class="text-xs font-semibold text-espresso">AED 400</span>
+                <span class="text-xs font-semibold text-espresso">AED 749</span>
               </div>
               <div class="font-serif text-xl text-espresso mt-3">18k Champagne Gold</div>
               <p class="text-xs text-taupe mt-1">Warm PVD gold-plated aerospace alloy with mirror finish.</p>
@@ -548,7 +556,7 @@
             <button type="button" onclick="selectConfigMetal('silver')" id="cfg-metal-silver" class="text-left p-5 rounded-2xl border border-espresso/10 bg-alabaster/60 hover:bg-alabaster transition-all">
               <div class="flex items-center justify-between">
                 <span class="w-6 h-6 rounded-full silver-gradient border border-espresso/15"></span>
-                <span class="text-xs font-semibold text-espresso">AED 400</span>
+                <span class="text-xs font-semibold text-espresso">AED 649</span>
               </div>
               <div class="font-serif text-xl text-espresso mt-3">925 Sterling Silver</div>
               <p class="text-xs text-taupe mt-1">Cool rhodium-polished sterling silver lustre.</p>
@@ -657,15 +665,21 @@
   </section>
 
   <!-- ========================================================= -->
-  <!-- 6. LUXURY FOOTER                                          -->
+  <!-- 6. FOOTER                                                 -->
   <!-- ========================================================= -->
   <footer class="bg-espresso text-alabaster pt-16 pb-12 px-4 sm:px-6 lg:px-10 border-t border-white/10">
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-14 border-b border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
         
-        <!-- Brand Column -->
+        <!-- Brand Column (Drop light/gold footer logo at ./images/naseem-logo-light.png in VS Code) -->
         <div class="md:col-span-5">
-          <div class="flex items-center gap-3">
+          <img 
+            src="logo.png" 
+            alt="NASEEM DUBAI" 
+            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+            class="h-10 w-auto object-contain"
+          />
+          <div class="hidden flex items-center gap-3">
             <span class="font-serif text-2xl tracking-[0.22em]">NASEEM DUBAI</span>
             <span class="font-arabic text-lg text-gold-champagne">نسيم دبي</span>
           </div>
@@ -1307,7 +1321,10 @@
 
       // Update Navbar & Studio Control Pills
       const isGold = finish === 'gold';
-      document.getElementById('nav-brand-dot').className = `w-2.5 h-2.5 rounded-full transition-transform group-hover:scale-125 ${isGold ? 'bg-gold' : 'bg-silver'}`;
+      const brandDot = document.getElementById('nav-brand-dot');
+      if (brandDot) {
+        brandDot.className = `w-2.5 h-2.5 rounded-full transition-transform group-hover:scale-125 ${isGold ? 'bg-gold' : 'bg-silver'}`;
+      }
       
       document.getElementById('nav-btn-gold').className = `px-3 py-1 rounded-full text-[11px] font-medium tracking-wider uppercase transition-all ${isGold ? 'bg-espresso text-alabaster shadow-sm' : 'text-taupe hover:text-espresso'}`;
       document.getElementById('nav-btn-silver').className = `px-3 py-1 rounded-full text-[11px] font-medium tracking-wider uppercase transition-all ${!isGold ? 'bg-espresso text-alabaster shadow-sm' : 'text-taupe hover:text-espresso'}`;
