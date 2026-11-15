@@ -139,7 +139,7 @@
   <header class="fixed top-0 inset-x-0 z-40 glass-panel transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo / Wordmark (Drop your logo at ./images/naseem-logo.png in VS Code) -->
+      <!-- Brand Logo / Wordmark (Upload naseem-logo.png in the same GitHub root folder as index.html) -->
       <a href="#" class="flex items-center gap-3 group">
         <img 
           src="logo.png" 
@@ -459,16 +459,16 @@
         </a>
       </div>
 
-      <!-- Three-Column Staggered Gallery Template (Replace src paths in VS Code) -->
+      <!-- Three-Column Staggered Gallery Template (Upload image files in the same GitHub root folder as index.html) -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-start">
         
         <!-- SLOT 1 (Left Column, Aligned Higher): ALSERKAL AVENUE -->
         <figure onclick="previewLookbookFinish('gold')" class="group cursor-pointer">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="./images/alserkal-avenue.jpg" 
+              src="alserkal-avenue.jpg" 
               alt="18k Champagne Gold Naseem Collar at Alserkal Avenue" 
-              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+              onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
@@ -485,9 +485,9 @@
         <figure onclick="previewLookbookFinish('silver')" class="group cursor-pointer md:mt-16 lg:mt-20">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="./images/downtown-rooftop.jpg" 
+              src="downtown-rooftop.jpg" 
               alt="925 Sterling Silver Naseem Collar at a Downtown Dubai Rooftop" 
-              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+              onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
@@ -504,9 +504,9 @@
         <figure onclick="previewLookbookFinish('silver')" class="group cursor-pointer">
           <div class="relative aspect-[4/5] overflow-hidden bg-sand border border-dashed border-espresso/20 flex items-center justify-center">
             <img 
-              src="./images/al-fahidi.jpg" 
+              src="al-fahidi.jpg" 
               alt="925 Sterling Silver Naseem Collar in Al Fahidi Historical Neighbourhood" 
-              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+              onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden');"
               class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             />
             <div class="hidden text-center p-6 pointer-events-none">
@@ -541,7 +541,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs uppercase tracking-[0.2em] text-taupe font-semibold">01 / Select Precious Metal</span>
-            <span class="text-xs text-taupe">Both finishes AED 400</span>
+            <span class="text-xs text-taupe"></span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <button type="button" onclick="selectConfigMetal('gold')" id="cfg-metal-gold" class="text-left p-5 rounded-2xl border-2 border-espresso bg-alabaster transition-all shadow-sm">
@@ -671,7 +671,7 @@
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
         
-        <!-- Brand Column (Drop light/gold footer logo at ./images/naseem-logo-light.png in VS Code) -->
+        <!-- Brand Column (Upload light/gold footer logo as naseem-logo-light.png in the GitHub root folder) -->
         <div class="md:col-span-5">
           <img 
             src="logo.png" 
@@ -790,13 +790,13 @@
         name: '18k Champagne Gold',
         short: '18k Champagne Gold',
         theme: 'gold',
-        price: 400
+        price: 749
       },
       silver: {
         name: '925 Sterling Silver',
         short: '925 Sterling Silver',
         theme: 'silver',
-        price: 400
+        price: 649
       }
     };
 
