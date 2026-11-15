@@ -541,7 +541,7 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <span class="text-xs uppercase tracking-[0.2em] text-taupe font-semibold">01 / Select Precious Metal</span>
-            <span class="text-xs text-taupe"></span>
+            <span class="text-xs text-taupe">Made to order in d3</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <button type="button" onclick="selectConfigMetal('gold')" id="cfg-metal-gold" class="text-left p-5 rounded-2xl border-2 border-espresso bg-alabaster transition-all shadow-sm">
@@ -648,11 +648,11 @@
 
         <div class="pt-5 border-t border-white/15 flex items-baseline justify-between mb-6">
           <span class="text-xs uppercase tracking-[0.2em] text-alabaster/70">Total (VAT Incl.)</span>
-          <span id="summary-price" class="font-serif text-3xl sm:text-4xl text-gold-champagne">AED 400</span>
+          <span id="summary-price" class="font-serif text-3xl sm:text-4xl text-gold-champagne">AED 749</span>
         </div>
 
         <button type="button" onclick="addToBespokeBag()" class="w-full py-4 rounded-full bg-gold text-espresso font-semibold text-xs uppercase tracking-[0.2em] hover:bg-gold-champagne transition-all shadow-lg flex items-center justify-center gap-2">
-          <span>Add Bespoke Piece to Bag &mdash; AED 400</span>
+          <span id="summary-cta-text">Add Bespoke Piece to Bag &mdash; AED 749</span>
           <span>&rarr;</span>
         </button>
 
@@ -1443,6 +1443,8 @@
 
       document.getElementById('summary-metal').textContent = item.name;
       document.getElementById('summary-price').textContent = `AED ${item.price}`;
+      const ctaText = document.getElementById('summary-cta-text');
+      if (ctaText) ctaText.innerHTML = `Add Bespoke Piece to Bag &mdash; AED ${item.price}`;
       document.getElementById('summary-swatch').className = `w-8 h-8 rounded-full border border-white/30 ${item.theme === 'gold' ? 'gold-gradient' : 'silver-gradient'}`;
 
       if (sync3D) {
